@@ -1,0 +1,19 @@
+{
+  "name": "uoe-inventory-system",
+  "version": "1.0.0",
+  "description": "An app that lallows users to check in and out parts or tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UOERacing/inventory_system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UOERacing/inventory_system/issues"
+  },
+  "homepage": "https://github.com/UOERacing/inventory_system#readme"
+}
