@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/UOERacing/inventory_system/issues"
   },
-  "homepage": "https://github.com/UOERacing/inventory_system#readme"
+  "homepage": "https://github.com/UOERacing/inventory_system#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  }
 }
