@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <header>
+        <title>Database Test</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </header>
+
+    <body>
+        <section>
+            <h1>Item List</h1>
+            <ul class="list-group">
+                <li class="list-group-item">ITEM1</li>
+                <li class="list-group-item">ITEM2</li>
+            </ul>
+        </section>
+        <hr>
+
+        <form>
+            <h2>Checkout Object</h2>
+            <input type="text" id="itemID">
+        </form>
+
+    </body>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC36NDoFIwckLTC1FwXngqJOr1crlebyQA",
+        authDomain: "uoe-inventory-system.firebaseapp.com",
+        databaseURL: "https://uoe-inventory-system.firebaseio.com",
+        projectId: "uoe-inventory-system",
+        storageBucket: "uoe-inventory-system.appspot.com",
+        messagingSenderId: "932010014984"
+    };
+    firebase.initializeApp(config);
+
+    function updateItemList(){
+        firebase.database().ref('/users/').on('value', function(snapshot) {
+            for(var key in snapshot.val()){
+                for(var key1 in key){
+                    console.log(key1);
+                }
+            }
+        });
+    }
+    updateItemList();
+
+    </script>
+    
+
+</html>
