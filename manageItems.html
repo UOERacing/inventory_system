@@ -12,44 +12,86 @@
   </head>
   <body>
   <h1>Manage Items</h1>
-    <form>
-    <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">fdjskfjdslk</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-        </div>
+ 
+  <div class="container">
+  <div class="row">
+    <div class="w-100"></div>
+    <div class="col">ITEM NAME
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-dark">Bolt</li>
+        <li class="list-group-item list-group-item-dark">Screw</li>
+        <li class="list-group-item list-group-item-dark">Wrench</li>
+        <li class="list-group-item list-group-item-dark">Hammer</li>
+          
+      </ul>
+      </div>
+    <div class="col">ITEM ID
+        <li class="list-group-item list-group-item-dark">322332</li>
+        <li class="list-group-item list-group-item-dark">321232</li>
+        <li class="list-group-item list-group-item-dark">112322</li>
+        <li class="list-group-item list-group-item-dark">112321</li>
+      </div>
+  </div>
+</div>    
+         
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-secondary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Add Items:
+        </button>
+      </h5>
     </div>
-    <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">User's Student ID</label>
-        <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-        </div>
-    </div>
-    <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0">Add/Remove User</legend>
-      <div class="col-sm-10">
-          <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
-            Add
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            Remove
-          </label>
-        </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Item Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Item Category</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Quantity</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Student ID</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            </div>
+        </form>
+         <button type="button" class="btn btn-primary btn-lg">Sumbit Changes</button>
       </div>
     </div>
-  </fieldset>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Apply Changes</button>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-secondary collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Remove Items:
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Student ID</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            </div>
+        </form>
+        <button type="button" class="btn btn-primary btn-lg">Sumbit Changes</button>
+      </div>
     </div>
   </div>
-</form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
